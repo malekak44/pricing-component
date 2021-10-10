@@ -1,0 +1,19 @@
+.intro {
+    padding: 4.7rem 0;
+    text-align: center;
+    background-image: url("../images/pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    h1 {
+        font-size: 26px;
+        margin-bottom: 0;
+        color: $darkDesaturatedBlue;
+    }
+
+    p {
+        font-size: 14px;
+        margin-top: 11px;
+        color: $grayishBlue;
+    }
+}
