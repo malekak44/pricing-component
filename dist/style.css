@@ -27,7 +27,7 @@ a {
 }
 
 .intro {
-  padding: 4.7rem 0;
+  padding: 4.7rem 0 4.5rem;
   text-align: center;
   background-image: url("../images/pattern-circles.svg");
   background-repeat: no-repeat;
@@ -44,5 +44,77 @@ a {
   font-size: 14px;
   margin-top: 11px;
   color: #858fad;
+}
+
+.card {
+  background: white;
+  height: 200px;
+  width: 505px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px -20px rgba(46, 78, 150, 0.4);
+}
+
+.card__stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 23px 42px;
+  color: #858fad;
+}
+
+.card__stats #price {
+  font-size: 37px;
+  font-weight: 800;
+  color: #293356;
+  letter-spacing: -1px;
+  margin-right: 10px;
+}
+
+.card__views {
+  font-size: 13px;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+}
+
+.card__price {
+  display: flex;
+  align-items: center;
+}
+
+.card__range .slider {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+  appearance: none;
+  height: 1rem;
+  background: linear-gradient(to right, #a5f3eb 0%, #a5f3eb 50%, #eaeefb 50%, #eaeefb 100%);
+  border-radius: 1rem;
+  background-image: linear-gradient(to right, #a3a8f0, #696fdd);
+  outline: 0;
+  cursor: pointer;
+  transition: background-image 0.09s ease-in-out;
+  position: relative;
+}
+
+.card__range .slider:checked {
+  background-image: linear-gradient(to right, #a3a8f0, #696fdd);
+}
+
+.card__range .slider:checked::after {
+  left: 2rem;
+}
+
+.card__range .slider:after {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  background-color: white;
+  position: absolute;
+  transform: scale(0.7);
+  left: 0;
+  transition: left 0.09s ease-in-out;
+  box-shadow: 0 0.1rem rgba(0, 0, 0, 0.5);
 }
 /*# sourceMappingURL=style.css.map */
