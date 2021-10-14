@@ -14,13 +14,15 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-size: 15px;
     font-family: 'Manrope', sans-serif;
     background-color: $veryPaleBlue;
     background-image: url("../images/bg-pattern.svg");
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 150vh;
+    background-size: 240vh;
+
+    @include breakpoint-up(large) {
+        background-size: contain;
+    }
 }
 
 a {
