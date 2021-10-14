@@ -39,14 +39,12 @@ function handlePricingChanges(value) {
 	)`;
 }
 
-range.addEventListener('input', function (event) {
-	console.log('range value :>> ', event.target.value);
+range.addEventListener('input', function () {
 	const value = range.value;
 	handlePricingChanges(value);
 });
 
-toggleDiscount.addEventListener('input', function (event) {
-	console.log('range value :>> ', event.target.value);
+toggleDiscount.addEventListener('input', function () {
 	const value = range.value;
 	handlePricingChanges(value);
 });

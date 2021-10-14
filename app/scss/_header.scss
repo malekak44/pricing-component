@@ -1,9 +1,13 @@
 .header {
     text-align: center;
-    padding: 4.7rem 0 4.5rem;
+    padding: 5.5rem 0 3rem;
     background-image: url("../images/pattern-circles.svg");
     background-repeat: no-repeat;
     background-position: center;
+
+    @include breakpoint-up(medium){
+        padding: 6rem 0 4rem;
+    }
 
     h1 {
         margin-bottom: 0;

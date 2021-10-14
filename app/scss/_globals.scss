@@ -8,7 +8,10 @@ html {
 *,
 *::before,
 *::after {
+    margin: 0;
+    padding: 0;
     box-sizing: inherit;
+    -webkit-box-sizing: border-box;
 }
 
 body {
@@ -21,10 +24,28 @@ body {
     background-size: 240vh;
 
     @include breakpoint-up(large) {
-        background-size: cover;
+        background-size: 215vh;
     }
 }
 
 a {
     text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    margin: 0 auto;
+    font-size: 62.5%;
+    line-height: 1.6;
+    padding: 0 0.5rem;
+    max-width: 38.8rem;
+    margin-bottom: 5rem;
+
+    @include breakpoint-up(medium) {
+        padding: 0 2rem;
+        margin-bottom: 6rem;
+    }
 }
