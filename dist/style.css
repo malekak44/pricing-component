@@ -22,7 +22,7 @@ body {
 
 @media (min-width: 64em) {
   body {
-    background-size: contain;
+    background-size: cover;
   }
 }
 
